@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <!-- Os pseudo-elementos estão relacionados com o conteúdo da tag -->
+    <!-- O seu seletor é :: -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Essa pseudo-classe vai ativar quando o elemento já tiver sido clicado / visitado */
+        a:visited{
+            color: blue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        
+        /* Essa pseudo-classe é ativada quando o elemento é clicado */
+        a:active{
+            color: yellow;
+        }
+
+        /* Depois de todo elemento da tag a haverá o conteúdo que for especificado */
+        a::after{
+            /* O content significa o conteúdo que será inserido */
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+
+        /* Você pode combinar seletores */
+        .especial::before{
+            content: '*** ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

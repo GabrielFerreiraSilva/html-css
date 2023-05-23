@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <!-- Os formatos compatíveis são MP4, M4V, OGV e WEBM, como já foi dito, o ideal é ter o mesmo vídeo nos três formatos e colocar a estrutura source -->
+    <!-- Você pode ter também uma imagem que vai servir como tumb (no nosso exemplo vou colocar a imagem média do exercício anterior) -->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Também há duas formas de fazer isso -->
+    <!-- Você pode regular a largura e altura -->
+    <!-- Utilizando a tumb -->
+    <video src="midia/hello-trouble.mp4" width="560" poster="imagens/foto-m.png" controls></video>
+    <!-- Outra forma (se preocupando com a compatibilidade) -->
+    <video width="560"  controls>
+        <source src="midia/bed-of-roses.mp4" type="video/mp4">
+        <p>Seu navegador não pode reproduzir o vídeo</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ExVrn2UMMAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

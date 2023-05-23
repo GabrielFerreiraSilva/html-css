@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!-- Perceba a diferença: O primeiro abre uma nova guia, já o segundo sobrepõe a guia atual -->
+    <p>Você pode acessar o meu <a href="https://github.com/gabrielfsilva936/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    
+    <p>Você também pode acessar o <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">canal do Curso Em Vídeo no YouTube</a></p>
+
+    <h1>Usando links internos</h1>
+
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+
+    <!-- Caso você queira que a nova página abra na mesma guia da página atual, basta não colocar o target, ou colocar target="_self"-->
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/cronograma.pdf" download="cronograma.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/cronograma.zip" download="cronograma.zip" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

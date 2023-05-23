@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            /* O comando abaixo faz as div ficarem uma do lado da outra */
+            display: inline-block;
+            background-color: lightgrey;
+            /* Abaixo, um shorthand para bordas, primeiro vem a expessura, depois o tipo e por último a cor*/
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        
+        /* O seletor de pseudo-classes é o : */
+        /* A pseudo-classe é relacionada ao estado de algo */
+
+        /* Na pseudo-classe hover, quando o mouse for passado em cima da div, as ações do bloco serão executadas */
+        div:hover{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div é um espaço genérico que ocupa toda a largura da tela, mas você pode configurar largura e altura -->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

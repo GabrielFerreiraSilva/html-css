@@ -1,0 +1,10 @@
+Repositório é um local que usamos para guardar coisas
+É sempre recomendado guardar versões anteriores dos projetos que você faz
+Podemos instalar em nosso computador um gerenciador de versões
+O GIT é um software gratuito que faz esse controle das versões de um projeto
+Uma limitação do GIT é que ele vai fazer esse controle apenas no computador em que o projeto está sendo realizado
+
+O GitHub é uma plataforma que faz um backup das versões do projeto na nuvem de forma gratuita
+O GIT é um repositório local e o GitHub é um repositório remoto
+O GitHub também permite que você trabalhe em equipe
+Ao ato de copiar a versão do repositório local para o remoto dá-se o nome de "Push"

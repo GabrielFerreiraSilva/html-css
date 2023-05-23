@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <!-- Use a ferramenta DevTools (F12) para visualizar as alterações -->
+    <style>
+        h1{
+
+            /* Para transformar o h1 (que é box por padrão) em inline, faça display: inline; (Você também pode fazer o contrário na tag a que é inline por padrão, para isso faça display: block; */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /* As bordas são colocadas logo depois da caixa, na parte de fora dela */
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+            /* shorthand */
+            border: 10px solid darkslategray;
+            /* O padding é colocado logo depois da caixa, na parte de dentro dela */
+            /* A ordem de aplicação é como o ponteiro de um relógio */ 
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            /* shorthand */
+            padding: 10px 10px 10px 10px;
+            /* Como todas as medidas são iguais, você pode fazer só padding: 10px; */
+            /* Se você fizesse padding: 10px 15px; seria aplicado 10px em cima e em baixo e seria aplicado 15px na direita e na esquerda */
+
+            /* A margem é colocada logo depois da borda, na parte de fora dela */
+            /* A ordem de aplicação é a mesma do padding */
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+            /* shorthand margin: 20px 20px 40px 20px;*/      
+            /* Se eu quisesse centralizar eu poderia fazer margin: 20px auto 40px auto; */
+            margin: 20px auto 40px auto;
+            /* O comando margin: auto; vai centralizar o elemento na tela */
+
+            /* O outline fica do lado de fora da borda, porém dentro do espaço da margem */
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            /* shorthand */
+            outline: 5px dashed salmon;
+        } 
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<!-- Box ocupa a largura inteira do navegador, já o inline ocupa a largura do conteúdo. 
+    No box os elementos sempre serão um abaixo do outro, mesmo que haja espaço do lado. No inline, se houver espaço, os elementos são colocados lado a lado -->
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

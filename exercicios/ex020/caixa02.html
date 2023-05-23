@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            /* Para aplicar sombras nas caixas */
+            /* A ordem dos parâmetros é: deslocamento horizontal, deslocamento vertical, espalhamento e cor */
+            /* entre o deslocamento vertical e o espalhamento voçê também pode colocar a medida do blur (em px) */
+            /* Caso voçê queira que a sombra seja para dentro, coloque a palavra inline antes do primeiro parâmetro */
+            box-shadow: 2px 2px 4px 1px rgb(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* Para arredondar as bordas de uma caixa, use o border-radius */
+            /* As ordens funcionam do mesmo jeito do padding */
+            border-radius: 10px 0px;
+            /* Se você adicionar uma sombra, ela também vai ficar arredondada */
+            box-shadow: 4px 4px 9px rgb(0, 0, 0, 0.384);
+
+            /* Para fazer bordas personalizadas, faça:
+
+                *** Não tire a borda normal ao adicionar uma personalizada ***
+            
+                border-image-source: url('caminho');
+                border-image-slice: numero; (aumente ou diminua o número para regular a borda)
+                border-image-repeat: repeat;
+            */
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        /* Fazendo círculos com CSS */
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            /* Para o círculo se formar basta configurar o border-radius para 50% */
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- header é o cabeçalho do site -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- nav demarca um menu de navegação (ela tem elementos que apontam para outros elementos ou páginas) -->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!-- main é o conteúdo principal do site -->
+    <main>
+        <!-- section demarca um trecho / parte / seção do conteúdo principal -->
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <!-- article é a parte que realmente contém informações -->
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem eos sit quas amet. Nobis id temporibus praesentium repellat totam accusantium molestiae dolores. Laboriosam aliquam ipsam quod, magnam minus perferendis!</p>
+                <!-- aside contém informações periféricas relativas ao article -->
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <!-- footer é o rodapé do site -->
+    <footer>
+        <p>Desenvolvido por Gabriel</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

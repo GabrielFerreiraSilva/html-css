@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /* Quando o nome da fonte tem duas palavras, elas precisam estar entre aspas simples */
+        /* São colocadas várias fontes separadas por vírgula, pois se o dispositivo não puder utilizar a primeira fonte, ele tenta utilizar a segunda, e assim por diante */
+        /* Essas combinações são chamadas de safe combinations */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas: cm. mm, in, px, pt, pc
+
+            Medidas relativas: em (relativa ao tamanho atual da fonte), ex (relativo a altura x de uma fonte), rem (é como a em, mas relativa a fonte do pai), vw (relativo a largura da tela), vh (relativo a altura da tela), %
+
+            A W3C recomenda o uso do % e em
+
+            Geralmente 16px = 1em
+            */
+            font-size: 1em;
+
+            /* O font-style serve para configurar o estilo da fonte, que pode ser normal ou italic */
+            /* font-style: italic; */
+
+            /* O text-decoration serve para decorar o texto. underline vai sublinhar, */
+            /* text-decoration: underline; */
+        }
+        /* Quando você quiser que as configurações se apliquem a mais de uma tag, coloque-as separadas por vírgula */
+
+        /* Para trabalhar com peso da fonte (mais ou menos gordinha), use a configuração font-weight, os pesos são lighter, normal, bold e bolder (ou pode colocar uma configuração numérica no intervalo [100,900]). Saiba que nem todas as fontes têm todas as configurações */
+
+        /* Você pode condensar o font-family, font-weight, font-size e o font-style em uma configuração única chamada shorthand font
+        
+        A ordem é: font-style -> font-weight -> font-size -> font-family
+
+        Você não é obrigado a colocar todas as 4 configurações
+
+        */
+        h1{
+            font: italic bolder 3em Arial, Helvetica, sans-serif;
+        }
+
+        h2{
+            font: bold 2em Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate autem aspernatur nobis. Repellendus incidunt aperiam, porro perspiciatis suscipit dolorem quisquam illum iure enim laboriosam eum sapiente modi impedit iusto voluptatum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laudantium iure incidunt sunt dignissimos? Ipsa quae, corporis voluptate fugit eum quisquam a culpa dolores consequatur incidunt voluptatibus, voluptas ea iste.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat totam, odit suscipit possimus sunt qui sint quod amet, et culpa ea omnis dolorem aspernatur tenetur animi est facere. Saepe, modi!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut adipisci dignissimos esse culpa fugiat sint aliquam consectetur quae tempore. Voluptas, harum vitae nam inventore eos quasi assumenda natus? Illum!</p>
+</body>
+</html>

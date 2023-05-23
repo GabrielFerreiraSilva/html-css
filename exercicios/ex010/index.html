@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!-- Atenção! A ordem dos source importa, tem que ser crescente ou decrescente de acordo com os tamanhos das imagens -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- A foto grande será carregada, mas se a tela tiver até 1050px, ele vai carregar a média -->
+        <!-- Se a tela diminuir pra 750px ou menos, aí carrega a imagem pequena -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- Podemos colocar áudios MP3 WAV e OGG -->
+    <!-- A insersão pode ser feita de duas formas diferentes -->
+    <audio src="midia/young widow brown.mp3" controls></audio>
+    <!-- Você também pode adicionar abaixo o parâmetro loop -->
+    <audio preload="metadata" controls >
+        <!-- Por medidas de compatibilidade, o ideal seria você ter o mesmo áudio dos três tipos de extensão, um abaixo do outro, lembrando que a ordem do source importa -->
+        <source src="midia/Truck drivin man.mp3" type="audio/mpeg">
+        <!-- Mensagem caso não possa reproduzir -->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/Truck drivin man.mp3">Clique aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>

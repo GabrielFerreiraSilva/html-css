@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* Para fazer degradê use a propriedade background-image */
+        /* Na função, primeiro indique a direção (right, left, top ou bottom (ou você pode indicar um ângulo como 45deg)), depois a cor inicial e por fim a cor final (você pode colocar quantas cores quiser) */ 
+        /* Depois da cor você pode colocar uma porcentagem, que será a porcentagem da tela que aquela cor vai ocupar */
+        *{ /* Esse asterisco indica que essa é uma configuração global para essa CSS */
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to right, #3198e2, #6d59c0, #b93590, #e33f5f, #fdd579);
+
+            /* Você também pode testar a função radial-gradient 
+            background-image: radial-gradient(circle, #3198e2, #6d59c0, #b93590, #e33f5f, #fdd579); */
+
+            /* Para que o fundo fique fixo */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

@@ -8,3 +8,6 @@ O GitHub é uma plataforma que faz um backup das versões do projeto na nuvem de
 O GIT é um repositório local e o GitHub é um repositório remoto
 O GitHub também permite que você trabalhe em equipe
 Ao ato de copiar a versão do repositório local para o remoto dá-se o nome de "Push"
+
+Ao criar um repositório local, é recomendado que ele tenha o mesmo nome da pasta que armazena os arquivos do projeto
+É recomendado que o caminho do repositório seja a pasta onde está a pasta do projeto (é o mesmo caminho da pasta do projeto)

@@ -13,3 +13,5 @@ Ao criar um repositório local, é recomendado que ele tenha o mesmo nome da pas
 É recomendado que o caminho do repositório seja a pasta onde está a pasta do projeto (é o mesmo caminho da pasta do projeto)
 
 Ao ato de atualizar o repositório local dá-se o nome de commit
+
+Para clonar um repositório que estiver no GitHub, você pode simplesmente procurar pela opção 'Open In Desktop' (só se você tiver o GitHub Desktop)

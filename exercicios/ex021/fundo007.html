@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /* Para centralizar verticalmente você deve ter um container e um conteudo */
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            /* Para alinhar verticalmente o conteiner deve ter posicionamento relativo */
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            /* Para que alinhe verticalmente o conteudo deve ter posicionamento absoluto */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* Para alinhar o conteudo horizontalmente usa-se o margin: auto; */
+            margin: auto;
+            /* Agora você pode configurar as propriedades left e top, que ditam a distância da esquerda e do topo */
+            /* Perceba que assim o conteúdo ficou alinhado ao centro mas considerou o canto superior esquerdo do conteúdo */
+            left: 50%;
+            top: 50%;
+            /* para deixar realmente alinhado, faça assim */
+            /* O conteúdo vai transladar pra direita e pra baixo (a não ser que os valores sejam negativos) */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

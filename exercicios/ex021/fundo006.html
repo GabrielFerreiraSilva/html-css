@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Você verá que a imagem irá acabar e não irá repetir, logo o fundo preto vai aparecer */
+        body{
+            height: 100vh;
+
+            /*
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: repeat;
+            /* O comando abaixo faz com que a imagem preencha a largura e a altura toda da tela */
+            /* background-size: 100% 100%; */
+            /* O problema é que a imagem vai distorcer conforme a tela mudar de tamanho */
+            /* O parâmetro contain faz com que a imagem seja sempre totalmente exibida */
+            /* O parâmetro cover vai preencher a tela inteira, mesmo que para isso ele tenha que cortar um pouco da imagem */
+            /* Se o conteúdo da página for longo vai chegar um momento que ou vai repetir a imagem ou vai mostrar a cor de fundo */
+            /*
+            background-size: cover;
+            /* Para resolver esse problema usamos o vínculo */
+            /* Com scroll, o fundo rola junto com o conteúdo */
+            /* Com fixed, apenas o conteúdo rola, mas o fundo fica parado */
+            /*
+            background-attachment: fixed;
+            */
+            /* Há uma shorthand para background */
+            /* color > image > position > repeat > [size] > attachment */
+
+            /* Não coloque o cover no shorthand, faça um comando só pra ele */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        main{
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Teste de Imagem de Fundo
+        </h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique, repellendus iusto debitis maiores ea ducimus facilis? Hic maiores incidunt nisi doloremque ducimus ullam suscipit, obcaecati animi impedit tenetur odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nisi id quo itaque nobis tenetur quos fuga magnam quisquam, doloribus aspernatur quia ex culpa voluptates, nesciunt quibusdam perferendis corporis dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis suscipit unde maxime impedit amet enim necessitatibus quos illum? Rem sunt a inventore velit ea quae quos voluptatibus, laborum eum dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique modi eum non, labore quasi ipsam reiciendis. Esse corrupti quas consequuntur alias nulla qui voluptate doloribus quam, id commodi exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi at libero incidunt eos, enim tempora doloribus nam quis voluptatem reprehenderit quibusdam voluptatum odit aperiam sequi dolorem mollitia temporibus minus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quam assumenda quae placeat exercitationem sit, dicta ab obcaecati in rerum nulla excepturi laboriosam, molestias laudantium. Iste, ex explicabo? Dolorem, optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit reprehenderit consectetur hic, nostrum praesentium nisi dolores maxime unde sunt iste in veritatis aliquam. Dolores consequuntur eaque voluptas quidem omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eos veritatis ipsa, doloremque velit amet qui assumenda vero minus reprehenderit provident a autem dolores, exercitationem neque voluptate dolorum deleniti! Fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatibus dolorum atque quod nobis, qui obcaecati reprehenderit natus voluptas officiis, et quisquam facilis aspernatur harum ad ratione itaque doloremque labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid ratione, voluptas dolore iste error temporibus ducimus minus dicta porro vitae corrupti laudantium quo officia neque dignissimos officiis sunt iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem veniam a nihil eius assumenda voluptatum, nisi, quidem eum delectus qui placeat suscipit harum ducimus reprehenderit, eaque libero nobis aspernatur id.
+        </p>
+    </main>
+</body>
+</html>
